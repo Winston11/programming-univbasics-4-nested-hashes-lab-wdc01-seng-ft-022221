@@ -15,7 +15,7 @@ def hopper
         :languages => ["C"]
       }
     }
-
+programmer_hash[:grace_hopper]
 end
 
 def alan_kay_is_known_for
@@ -36,7 +36,7 @@ def alan_kay_is_known_for
         :languages => ["C"]
       }
     }
-
+programmer_hash[:alan_kay][:known_for]
 end
 
 def dennis_ritchies_language
@@ -55,6 +55,7 @@ def dennis_ritchies_language
         :languages => ["C"]
       }
     }
+programmer_hash[:dennis_ritchies_language][:languages]="C"
 
 end
 
@@ -79,16 +80,16 @@ def adding_matz
       :dennis_ritchie => {
         :known_for => "Unix",
         :languages => ["C"]
-      }
+      },
+      
     }
-
 end
 
 def changing_alan
   # change what Alan Kay is :known_for to the value of the alans_new_info variable. 
   # return the entire updated hash
 
-	programmer_hash = 
+	programmer_hash_new = 
  		{
       :grace_hopper => {
         :known_for => "COBOL",
